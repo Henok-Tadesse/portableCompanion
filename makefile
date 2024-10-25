@@ -18,11 +18,13 @@ all: $(TARGET)
 
 # Rule to link the object files to create the executable
 $(TARGET): $(OBJS)
-	$(CXX) $(CXXFLAGS) -o $(TARGET) $(OBJS)
+	$(CXX) $(CXXFLAGS) -o $(TARGET) $(OBJS) -target x86_64-linux-gnu
 
 # Rule to compile the source files into object files
 %.o: %.cpp
 	$(CXX) $(CXXFLAGS) -c $< -o $@
+
+endif
 
 # Clean up the build files
 clean:
