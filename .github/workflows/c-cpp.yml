@@ -19,4 +19,8 @@ jobs:
         run: echo "Hello, world!"
       - name: show folder content
         run: ls -la  
+      - name: show file type
+        run: file main
+      - name: show system specs
+        run: lscpu
 
