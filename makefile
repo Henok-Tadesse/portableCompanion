@@ -1,5 +1,5 @@
 # Define the compiler
-CXX = g++
+CXX = clang++
 
 # Define the target executable
 TARGET = main
@@ -11,7 +11,7 @@ SRCS = main.cpp
 OBJS = $(SRCS:.cpp=.o)
 
 # Define the compilation flags
-CXXFLAGS = -Wall -g --target x86_64-linux-gnu
+CXXFLAGS = -Wall -g -arch x86_64
 
 # Default target
 all: $(TARGET)
