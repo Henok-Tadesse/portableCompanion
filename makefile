@@ -1,5 +1,5 @@
 # Define the compiler
-CXX = clang
+CXX = g++
 
 # Define the target executable
 TARGET = main
