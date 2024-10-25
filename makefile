@@ -1,5 +1,5 @@
 # Define the compiler
-CXX = g++
+CXX = clang++
 
 # Define the target executable
 TARGET = main
@@ -11,14 +11,14 @@ SRCS = main.cpp
 OBJS = $(SRCS:.cpp=.o)
 
 # Define the compilation flags
-CXXFLAGS = -Wall -g
+CXXFLAGS = -Wall -g -target x86_64-linux-gnu
 
 # Default target
 all: $(TARGET)
 
 # Rule to link the object files to create the executable
 $(TARGET): $(OBJS)
-	$(CXX) $(CXXFLAGS) -o $(TARGET) $(OBJS) -target x86_64-linux-gnu
+	$(CXX) $(CXXFLAGS) -o $(TARGET) $(OBJS) 
 
 # Rule to compile the source files into object files
 %.o: %.cpp
