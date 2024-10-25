@@ -24,7 +24,6 @@ $(TARGET): $(OBJS)
 %.o: %.cpp
 	$(CXX) $(CXXFLAGS) -c $< -o $@
 
-endif
 
 # Clean up the build files
 clean:
