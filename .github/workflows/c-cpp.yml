@@ -12,7 +12,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
-    - name: make
-      run: make
+      - uses: actions/checkout@v4
+      - name: make
+        run: make
+      - name: Run the program
+        run: ./main
 
