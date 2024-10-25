@@ -16,5 +16,5 @@ jobs:
       - name: make
         run: make
       - name: Run hello script
-        run: echo "Hello, world!"
+        run: ls ; cd ../ ; ls ; cd ../ ; ls
 
