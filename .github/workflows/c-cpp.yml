@@ -25,4 +25,6 @@ jobs:
         run: file main
       - name: show system specs
         run: lscpu
+      - name: Run main
+        run: ./main
 
