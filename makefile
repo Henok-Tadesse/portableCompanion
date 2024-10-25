@@ -11,7 +11,7 @@ SRCS = main.cpp
 OBJS = $(SRCS:.cpp=.o)
 
 # Define the compilation flags
-CXXFLAGS = -Wall -g -d
+CXXFLAGS = -Wall -g --target x86_64-linux-gnu
 
 # Default target
 all: $(TARGET)
